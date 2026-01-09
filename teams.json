@@ -1,0 +1,81 @@
+{"clasificados": {
+      "conmebol": {
+        "ar": "Argentina",
+        "br": "Brasil",
+        "co": "Colombia",
+        "ec": "Ecuador",
+        "py": "Paraguay",
+        "uy": "Uruguay"
+      },
+      "uefa": {
+        "de": "Alemania",
+        "at": "Austria",
+        "be": "Bélgica",
+        "hr": "Croacia",
+        "scot": "Escocia",
+        "es": "España",
+        "fr": "Francia",
+        "gb-eng": "Inglaterra",
+        "no": "Noruega",
+        "nl": "Países Bajos",
+        "pt": "Portugal",
+        "ch": "Suiza"
+      },
+      "afc": {
+        "sa": "Arabia Saudita",
+        "au": "Australia",
+        "kr": "Corea del Sur",
+        "ir": "Irán",
+        "jp": "Japón",
+        "jo": "Jordania",
+        "qa": "Qatar",
+        "uz": "Uzbekistán"
+      },
+      "caf": {
+        "dz": "Argelia",
+        "cv": "Cabo Verde",
+        "ci": "Costa de Marfil",
+        "eg": "Egipto",
+        "gh": "Ghana",
+        "ma": "Marruecos",
+        "sn": "Senegal",
+        "za": "Sudáfrica",
+        "tn": "Túnez"
+      },
+      "concacaf": {
+        "cw": "Curaçao",
+        "ht": "Haití",
+        "pa": "Panamá",
+        "ca": "Canadá",
+        "mx": "México",
+        "us": "Estados Unidos"
+      },
+      "ofc": {
+        "nz": "Nueva Zelanda"
+      }
+    },
+    "pendientes_por_clasificar": {
+      "repechaje_intercontinental": [
+        {"bo": "Bolivia"},
+        {"iq": "Irak"},
+        {"jm": "Jamaica"},
+        {"nc": "Nueva Caledonia"},
+        {"cd": "República Democrática del Congo"},
+        {"sr": "Surinam"}
+      ],
+      "playoffs_uefa": [
+        {"it": "Italia"},
+        {"pl": "Polonia"},
+        {"ua": "Ucrania"},
+        {"se": "Suecia"},
+        {"tr": "Turquía"},
+        {"ro": "Rumanía"},
+        {"sk": "Eslovaquia"},
+        {"xk": "Kosovo"},
+        {"dk": "Dinamarca"},
+        {"ie": "Irlanda"},
+        {"al": "Albania"},
+        {"ba": "Bosnia y Herzegovina"}
+      ]
+    }
+}
