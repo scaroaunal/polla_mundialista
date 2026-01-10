@@ -1,18 +1,10 @@
 {
-  "1234567": {
-    "nombre_completo": "i",
-    "cedula": "1234567",
-    "correo_electronico": "i@gmail.com",
-    "telefono": "3013456789",
-    "contrase\u00f1a": "8bb0cf6eb9b17d0f7d22b456f121257dc1254e1f01665370476383ea776df414",
-    "fecha_registro": "2026-01-08 07:10:37"
-  },
-  "12345678": {
-    "nombre_completo": "2",
-    "cedula": "12345678",
-    "correo_electronico": "id@gmail.com",
-    "telefono": "3214567867",
-    "contrase\u00f1a": "8bb0cf6eb9b17d0f7d22b456f121257dc1254e1f01665370476383ea776df414",
-    "fecha_registro": "2026-01-08 07:12:28"
+  "1041147": {
+    "nombre_completo": "Ivan",
+    "cedula": "1041147",
+    "correo_electronico": "a@hotmail.com",
+    "telefono": "123456789",
+    "contrase\u00f1a": "89e8af2e4405bab6bff0199c813accf822efb8fba4fd90ad465b64e417d771f4",
+    "fecha_registro": "2026-01-10 15:36:28"
   }
 }
