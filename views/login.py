@@ -1,7 +1,7 @@
 import streamlit as st
 from datetime import datetime
 from database import DatabaseManager
-from utils import validar_email, validar_cedula, validar_telefono, validar_contraseña
+from utils import validar_email, validar_cedula, validar_telefono, validar_password
 
 class LoginPage:
     def __init__(self, db: DatabaseManager):
@@ -73,14 +73,14 @@ class LoginPage:
                     
                     with col_b:
                         correo_electronico = st.text_input("Correo Electrónico", placeholder="ejemplo@email.com")
-                        contraseña = st.text_input("Contraseña", type="password", placeholder="Mínimo 6 caracteres")
-                        confirmar_contraseña = st.text_input("Confirmar Contraseña", type="password", placeholder="Repite tu contraseña")
+                        password = st.text_input("Contraseña", type="password", placeholder="Mínimo 6 caracteres")
+                        confirmar_password = st.text_input("Confirmar Contraseña", type="password", placeholder="Repite tu contraseña")
                     
                     submitted = st.form_submit_button("✅ Crear Cuenta", use_container_width=True)
                     
                     if submitted:
                         # Validar campos vacíos
-                        if not all([nombre_completo, cedula_reg, correo_electronico, telefono, contraseña, confirmar_contraseña]):
+                        if not all([nombre_completo, cedula_reg, correo_electronico, telefono, password, confirmar_password]):
                             st.error("❌ Por favor, completa todos los campos")
                         
                         # Validar cédula
@@ -95,12 +95,12 @@ class LoginPage:
                         elif not validar_telefono(telefono):
                             st.error("❌ El teléfono debe contener al menos 7 dígitos")
                         
-                        # Validar contraseña
-                        elif not validar_contraseña(contraseña):
+                        # Validar password
+                        elif not validar_password(password):
                             st.error("❌ La contraseña debe tener al menos 6 caracteres")
                         
-                        # Validar confirmación de contraseña
-                        elif contraseña != confirmar_contraseña:
+                        # Validar confirmación de password
+                        elif password != confirmar_password:
                             st.error("❌ Las contraseñas no coinciden")
                         
                         else:
@@ -110,7 +110,7 @@ class LoginPage:
                                 "cedula": cedula_reg.strip(),
                                 "correo_electronico": correo_electronico.strip().lower(),
                                 "telefono": telefono.strip(),
-                                "contraseña": contraseña,
+                                "password": password,
                                 "fecha_registro": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                             }
                             

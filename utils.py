@@ -14,6 +14,6 @@ def validar_telefono(telefono):
     telefono_limpio = telefono.replace(' ', '').replace('-', '')
     return telefono_limpio.isdigit() and len(telefono_limpio) >= 7
 
-def validar_contraseña(password):
-    """Valida que la contraseña tenga al menos 6 caracteres"""
+def validar_password(password):
+    """Valida que la password tenga al menos 6 caracteres"""
     return len(password) >= 6
